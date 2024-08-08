@@ -11,7 +11,7 @@ First, you need to upload the documents you wish to have analyzed in an AI respo
 This involves breaking down the documents into smaller segments because AI models typically only manage to process a few tens of kilobytes of custom data for generating responses.
 After splitting, these document segments are stored in the Vector Database.
 
-This first step was done using the code in the repository https://github.com/spring-cli-projects/ai-azure-rag-load
+This first step was done using the code in the repository https://github.com/ericm48/azure-ai-search-rag-load
 
 The second step involves including data from the Vector Database that is pertinent to your query when you make a request to the AI model.
 This is achieved by performing a similarity search within the Vector Database to identify relevant content and merging it with your original user request text.  This steps is done using Spring AI's `QuestionAnswerAdvisor` in the `ChatClient` fluent api.
@@ -28,7 +28,7 @@ The `/rag/chatbot` endpoint takes a `question` parameter which is the question y
 
 ### Loading the Data into the Azure AI Search Vector Store
 
-You should have already run the application in the repository https://github.com/spring-cli-projects/ai-azure-rag-load
+You should have already run the application in the repository https://github.com/ericm48/azure-ai-search-rag-load
 
 
 ### Azure OpenAI setup
