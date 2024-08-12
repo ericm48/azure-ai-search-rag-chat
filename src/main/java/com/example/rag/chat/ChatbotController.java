@@ -34,7 +34,7 @@ public class ChatbotController {
 	@GetMapping
 	public String query(
 			@RequestParam(value = "question", defaultValue = "What is the purpose of Carina?") String question,
-			@RequestParam(value = "version", defaultValue = "2") String version) {
+			@RequestParam(value = "version", defaultValue = "1") String version) {
 
 		Logger logger = methIDquery;
 
