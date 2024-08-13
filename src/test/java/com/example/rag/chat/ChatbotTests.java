@@ -19,7 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @SpringBootTest
 public class ChatbotTests {
 
-
     @Autowired
     private ChatClient.Builder builder;
 
